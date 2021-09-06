@@ -15,4 +15,9 @@ public class PathController {
 	public String createEmployee () {
 		return "addEmployee";
 	}
+	
+	@RequestMapping("/employee/{id}")
+	public String getEmployee () {
+		return "employee";
+	}
 }
