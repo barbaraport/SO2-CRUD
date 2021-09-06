@@ -1,7 +1,6 @@
 function getEmployee (employeeId) {
 	axios.get('/getEmployee/' + employeeId)
   .then(function (response) {
-    console.log(response);
     let name = document.getElementById("name");
     let lastName = document.getElementById("lastName");
     let hobby = document.getElementById("hobby");

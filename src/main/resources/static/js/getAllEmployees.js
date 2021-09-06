@@ -2,7 +2,6 @@ function getAllEmployees() {
 	axios.get('/getAllEmployees')
 		.then(function (response) {
 			// handle success
-			console.log(response);
 
 			response.data.forEach(employee => {
 
@@ -17,6 +16,9 @@ function getAllEmployees() {
 				var tdDU = document.createElement("td");
 				var btDelete = document.createElement("a");
 				var btEdit = document.createElement("a");
+				
+				btDelete.classList.add("no-decoration");
+				btEdit.classList.add("no-decoration");
 
 				btDelete.href = "javascript:deleteEmployee(" + employee.id + ");";
 				btEdit.href = "/employee/" + employee.id;

@@ -5,7 +5,6 @@ function addEmployee(event) {
           hobby: document.getElementById("hobby").value
      })
           .then(function (response) {
-               console.log(response);
                Swal.fire({
                     position: 'top-end',
                     icon: 'success',

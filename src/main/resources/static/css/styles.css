@@ -1,0 +1,14 @@
+.no-decoration {
+	text-decoration: none;
+	color: black;
+}
+
+.content {
+	margin: 0 auto;
+    min-height: 70vh;
+    width: 70%;
+}
+
+.background img {
+	opacity: 0.55;
+}
