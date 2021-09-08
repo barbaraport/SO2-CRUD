@@ -47,10 +47,11 @@ public class EmployeeController {
 	
 	@PutMapping("/editEmployee/{id}")
 	void editEmployee (@PathVariable Long id, @RequestBody Employee employeeUpdated) {
+		
 		employeeRepository.findById(id)
 		.map(employee -> {
 			employee.setName(employeeUpdated.getName());
-			employee.setLastName(employee.getLastName());
+			employee.setLastName(employeeUpdated.getLastName());
 			employee.setHobby(employeeUpdated.getHobby());
 			employeeRepository.save(employee);
 			return HttpStatus.OK;

@@ -12,11 +12,11 @@ function getAllEmployees() {
 				var tdName = document.createElement("td");
 				var tdLastName = document.createElement("td");
 				var tdHobby = document.createElement("td");
-				
+
 				var tdDU = document.createElement("td");
 				var btDelete = document.createElement("a");
 				var btEdit = document.createElement("a");
-				
+
 				btDelete.classList.add("no-decoration");
 				btEdit.classList.add("no-decoration");
 

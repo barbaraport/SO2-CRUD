@@ -1,5 +1,5 @@
-function editEmployee (event) {
-	employeeId = window.location.href.split('/').slice(-1);
+function editEmployee(event) {
+     employeeId = window.location.href.split('/').slice(-1);
      axios.put('/editEmployee/' + employeeId, {
           name: document.getElementById("name").value,
           lastName: document.getElementById("lastName").value,
